@@ -18,4 +18,4 @@ EXPOSE 8000
 
 ENV PYTHONUNBUFFERED=1
 
-CMD ["gunicorn", "--config", "gunicorn_config.py", "--log-level", "debug", "todo.wsgi:application"]
+CMD ["gunicorn", "--config", "gunicorn_config.py", "--log-level", "debug", "consumer.wsgi:application"]
