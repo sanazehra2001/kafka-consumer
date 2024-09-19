@@ -6,7 +6,7 @@ RUN apk update && apk add --no-cache \
     python3-dev \
     musl-dev
 
-WORKDIR /to-do
+WORKDIR /consumer
 
 COPY requirements.txt .
 RUN pip install --upgrade pip
