@@ -11,9 +11,13 @@ def consume_kafka_messages(request, topic):
         print("Called")
         # Initialize Kafka consumer for the specified topic
         consumer = get_consumer(topic)
-        
+        print(consumer)
+
         # Loop through the messages in the topic
         for message in consumer:
+            print("Received Message")
+            print(message)
+            print()
             try:
                 if not message.value:  # Check if the message is empty
                     print("Received empty message")
